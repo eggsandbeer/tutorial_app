@@ -7,11 +7,10 @@ New::Application.routes.draw do
 
   get "pages/help"
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+  match '/contact' => 'pages#contact'
+  match '/help' => 'pages#help'
+  match '/about' => 'pages#about'
+  
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -56,7 +55,7 @@ New::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'pages#home'
 
   # See how all your routes lay out with "rake routes"
 
