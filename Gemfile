@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'json'
 
+gem 'gravatar_image_tag', '0.1.0'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -30,6 +32,7 @@ end
 
 group :test do
   gem 'webrat'
+  gem 'factory_girl_rails', '1.0'
 end
 
 # To use ActiveModel has_secure_password
