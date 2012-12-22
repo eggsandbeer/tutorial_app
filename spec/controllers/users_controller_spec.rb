@@ -33,7 +33,6 @@ describe UsersController do
       get :show, :id => @user
       response.should have_selector("h1>img", :class => "gravatar" )
     end
-    
   end
 
   before(:each) do
