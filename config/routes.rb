@@ -7,6 +7,8 @@ New::Application.routes.draw do
   match '/help' => 'pages#help'
   match '/about' => 'pages#about'
   
+  match '/next' => 'pages#next'
+  
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
